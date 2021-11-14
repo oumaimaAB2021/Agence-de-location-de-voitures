@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-width: 100%;
+    background-color: #000;
+
+}
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #222;
+    border-bottom: 1px solid  #222;
+    position: relative;
+}
+h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    color: #03a9f4;
+    border-bottom: 1px solid #03a9f4 ;
+    width: 100%;
+    animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}

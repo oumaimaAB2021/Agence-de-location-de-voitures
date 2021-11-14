@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+html,body{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    }
+/**header*/
+#entete{
+    width:100%;
+    height:18%;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    
+}
+.image_entete{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+
+}
+
+.logo{
+
+    margin: 0;
+    padding-top:5;
+    position: relative;
+    width: 140;
+    height: 90;
+
+}
+ 
+/*Container*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+      margin-top: 30;
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+h2{
+   font-family:Nunito;
+}
+.about-section h1{
+    font-family: 'Dancing Script',"Sakkal Majalla";
+    font-size: 50;
+ }
+   
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+/**.......footer*/
+footer {
+    
+    border-top: 10px dashed #000;
+ 
+    background: #0e0d0d;
+    color: white;
+ 
+    width:100%;
+    height:40%;
+    position: relative;
+    overflow: hidden;
+   
+    margin: 0;
+    padding: 0;
+    
+}
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 5px 0 -5px;
+}
+
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+
+/* contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-medias h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: #75b1be;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-contact p {
+    padding: 0px 0;
+}
+
+/* Services */
+
+
+.liste-services,
+.liste-media {
+    list-style-type: none;
+}
+.liste-services li {
+    padding: 6px 0;
+    margin-left: -40px;
+}
+.logo_footer{
+     margin-top: 70;
+        padding-top:5;
+        position: relative;
+        width: 140;
+        height: 100;
+        padding-right: 30px;
+}
+
+
+
+/* Medias */
+
+.liste-media {
+    position: relative;
+    right: 10px;
+    
+}
+
+.liste-media a {
+    text-decoration: none;
+    color: bisque;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 6px 0;
+}
+

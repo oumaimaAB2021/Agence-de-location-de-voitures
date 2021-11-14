@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+html,body{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+    }
+    #entete{
+        width:100%;
+        height:50%;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .video_entete{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 0;
+        
+        object-fit: cover;
+        object-position: center;
+    
+    }
+    .logo{
+
+        margin: 0;
+        padding-top:5;
+        position: relative;
+        width: 140;
+        height: 90;
+
+    }
+    .nomsite{
+        font-size: 65px;
+        text-align: center;
+        margin: 0;
+        padding-top:0;
+        color: #FFF;
+        position: relative;
+        font-family: 'Dancing Script',"Sakkal Majalla";
+        text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    }
+    #formauto{
+        position: relative;
+        border: 1px solid #FFF;
+        border-left: none;
+        border-right: none;
+        background-color: rgbs(000,000,000,2);
+        margin-left: auto;
+        margin-right: auto;
+        width:70%;
+        min-height: 10%;
+        text-align: center;
+        padding: 2%;
+    
+    }
+    #motcle{
+        height: 30px;
+        width: 300px;
+        border:none;
+        padding-left: 2px;
+    }
+    .btfind{
+        height: 30px;
+        width: 300px;
+        border: none;
+        background-color: #265F6A;
+        color: #FFF;
+    }
+   
+
+    /*.............. Css de bouton  login........ */
+    a{
+        /* il n'y a pas soulignement bleu dans la balise a*/
+        text-decoration:none ;  
+    }
+    #entete .login{
+        opacity: 0.8;
+        color: #FFF;
+        padding: 14px 20px;/*14 pour top 20 pour right*/
+        margin:8px 8px;
+        border: 1px solid #FFBB8A;
+        border-right: none;/*pour ne pas afficher border right*/
+        cursor: pointer;/*pour curseur de la sourie*/
+        width:7%;
+        right: 0;
+        position:absolute;
+        z-index:10;/*pour que l'affichage sera au premier plan*/
+    }
+    #entete .login:hover{ /*type d'annimation qui sera affichier quand approche la sourie */
+        opacity:1 ;
+        background-color:#89b8c2;
+        border: none;
+    }
+/*..........services.....*/
+.service h3{
+    text-align: center;
+    position: relative;
+    font-size: 5vw;
+    line-height: 0.55em;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    font-family: 'Dancing Script', cursive;
+}
+
+    /**......................................................................................*/
+    #auto{
+        border: none;
+        width: 300px;
+        height: 220px;
+        margin:40px;
+        padding-left: 40px;
+        /* Pour que les articles soient en meme ligne*/
+        float: left;
+
+    }
+        
+.card-list{
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 5vh 5%;
+    grid-gap: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    vertical-align:middle;
+
+}
+.card-list .card-one img{
+    height: 250px;
+    width: 350px;  
+    /* Pour que les articles soient en meme ligne*/
+    float: left;
+
+}
+
+#auto .card-price{
+    background-color: #89b8c2;
+    color:#111010;
+    padding: 20px;
+    width: 20px;
+    height: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight:  bolder;
+   
+    position: relative;
+    bottom: 250;
+    
+}
+.card-info{
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+    background-color: #265F6A;
+    padding: 5px 0;
+    height: 20px;
+    position: relative;
+    bottom: 100;
+}
+.card-one:hover  .card-info{
+    transform: scale(1) translateY(100%) translateY(20px) translateZ(0);
+    transition: transform 1s;
+    transform-origin: bottom;
+}
+
+/**pagination**/
+.pagination a{
+    text-decoration: solid #265F6A;
+}
+
+/**.......footer*/
+footer {
+    
+    border-top: 1px dashed #000;
+    height: 280px;
+    width: 100%;
+    background: #0e0d0d;
+    color: white;
+    margin-top: 1100;
+    margin-bottom: 0;
+    position: relative;
+    
+}
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 5px 0 -5px;
+}
+
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+
+/* contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-medias h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: #75b1be;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-contact p {
+    padding: 0px 0;
+}
+
+/* Services */
+
+
+.liste-services,
+.liste-media {
+    list-style-type: none;
+}
+.liste-services li {
+    padding: 6px 0;
+    margin-left: -40px;
+}
+.logo_footer{
+     margin-top: 70;
+        padding-top:5;
+        position: relative;
+        width: 140;
+        height: 100;
+        padding-right: 30px;
+}
+
+
+
+/* Medias */
+
+.liste-media {
+    position: relative;
+    right: 10px;
+    
+}
+
+.liste-media a {
+    text-decoration: none;
+    color: bisque;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 6px 0;
+}
+
+
+

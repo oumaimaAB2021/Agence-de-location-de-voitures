@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+html,body{
+    width:100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+   
+    }
+   
+/**header*/
+#entete{
+    width:100%;
+    height:18%;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    
+}
+.image_entete{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+
+}
+
+.logo{
+
+    margin: 0;
+    padding-top:5;
+    position: relative;
+    width: 140;
+    height: 90;
+
+}
+   /*.............. Css de bouton   header........ */
+   #entete ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    }
+    #entete ul li {
+    margin-left:2px;
+    float: right;
+    }
+   
+
+#entete ul li a{
+    text-decoration:none ;
+    opacity: 0.8;
+    color: #FFF;
+    padding: 14px 10px;/*14 pour top 20 pour right*/
+    margin:10px 10px;
+    background-color:none;
+    border: none;  
+    cursor: pointer;/*pour curseur de la sourie*/
+    width:80;
+    right: 40;
+    position: relative;
+    z-index:10;/*pour que l'affichage sera au premier plan*/
+        display:block;
+        float: right;  
+        margin-right: 10;
+    
+}
+#entete ul li a:hover{ /*type d'annimation qui sera affichier quand approche la sourie */
+    opacity:2 ;
+    background-color: transparent;
+    border: 1px solid #FFBB8A;
+
+}
+
+/*Container*/
+#container{
+    width: 400px;
+    margin: 0 auto;/*0 pour top et auto pour le reste*/
+    margin-top:4% ;
+    margin-bottom: 4%;
+}
+#container h2{
+    font-size: 40px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    align-items: center;
+    font-family: 'Dancing Script',"Sakkal Majalla";
+}
+.formulaire{
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #FFF;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px 0 rgba(0,0,0,0.25);/*l'ombre*/
+}
+
+.zonetext{
+    
+    color:black;
+    padding:14px 20px ;
+    margin: 8px 0;
+    border: 1px solid black;
+    cursor: pointer;
+    width: 100%;
+}
+.submit{
+    background-color: #75b1be ;
+    color: black;
+    padding:14px 20px ;
+    margin: 8px 100px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+  
+    font-size: 18px  ;
+}
+.submit:hover{
+    background-color:  #89b8c2;
+    color:black ;
+    border: 1px solid #75b1be ;
+    
+    
+}
+
+/**.......footer*/
+footer {
+    
+    border-top: 10px dashed #000;
+ 
+    background: #0e0d0d;
+    color: white;
+ 
+    width:100%;
+    height:40%;
+    position: relative;
+    overflow: hidden;
+   
+    margin: 0;
+    padding: 0;
+    
+}
+.contenu-footer {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 5px 0 -5px;
+}
+
+.bloc {
+    width: 25%;
+    margin: 0 30px;
+}
+
+/* contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-medias h3 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: #75b1be;
+    font-family: 'Nunito', sans-serif;
+}
+
+.footer-contact p {
+    padding: 0px 0;
+}
+
+/* Services */
+
+
+.liste-services,
+.liste-media {
+    list-style-type: none;
+}
+.liste-services li {
+    padding: 6px 0;
+    margin-left: -40px;
+}
+.logo_footer{
+     margin-top: 70;
+        padding-top:5;
+        position: relative;
+        width: 140;
+        height: 100;
+        padding-right: 30px;
+}
+
+
+
+/* Medias */
+
+.liste-media {
+    position: relative;
+    right: 10px;
+    
+}
+
+.liste-media a {
+    text-decoration: none;
+    color: bisque;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    padding: 6px 0;
+}
+

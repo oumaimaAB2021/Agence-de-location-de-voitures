@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins',sans-serif;
+}
+section{
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 0;
+    
+}
+
+header .toggle{
+    position: relative;
+    right: -90;
+    bottom: -100;
+    width: 30px;
+    height: 20px;
+    
+    background: url(menu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .toggle.active{
+    background: url(close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: 25px;
+}
+header .toggle.active:before{
+    content: 'Close';
+
+}
+.glass{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 40%;
+    height: 100%;
+    backdrop-filter: blur(15px);
+    z-index: 1;
+    box-shadow: 10px 0 15px rgba(0,0,0,0.1);
+    transition: 0.5s;
+    transition-delay: 1s;
+}
+
+section.active .glass{
+    width: 100%;
+    backdrop-filter: blur(20px);
+    transition-delay: 0s;
+    box-shadow: 10px 0 15px rgba(0,0,0,0.5);
+
+}
+
+header .toggle:before{
+    position: absolute;
+    content: 'Menu';
+    right: 45px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 2px 5px;
+    background: #fff;
+    color: #111;
+}
+
+
+section video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100ù;
+    object-fit: cover;
+}
+section .content{
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    transition: 0.5s;
+    transition-delay: 1s;
+}
+section.active .content{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-200px);
+    transition-delay: 0s;
+}
+section .content h2{
+    position: relative;
+    color: #fff;
+    font-size: 9vw;
+    line-height: 0.55em;
+    text-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    font-family: 'Dancing Script', cursive;
+}
+section .content h2 span{
+    font-size: 0.1em;
+    font-weight: 300;
+    letter-spacing: 5px;
+    background: #fff;
+    color: #111;
+    padding: 0 10px;
+   
+    text-shadow: 0 5px 5px rgba(0,0,0,0);
+    box-shadow: 0 5px 5px rgba(0,0,0,0);
+    text-transform: uppercase;
+}
+section .sci{
+    position: absolute;
+    bottom: 40px;
+    right:100px;
+    display: flex;
+    z-index: 100;
+
+}
+section .sci li{
+    list-style: none;
+    margin: 5px;
+    padding: 0 6px;
+    
+}
+section.active .sci li {
+    opacity: 0;
+    visibility: hidden;
+    
+    transform: translateY(100px);
+}
+
+
+section .sci li a{
+    columns: #111111;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+section .navigation{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+section .navigation li{
+    list-style: none;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    transform:translateX(200px);
+}
+section.active .navigation li{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+    transition-delay: calc(0.2s * var(--i));
+
+}
+
+section .navigation li a{
+    color: #111;
+    font-size: 1.5em;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform:uppercase ;
+    background: #fff;
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+section .navigation li a:hover{
+    background: #111;
+    color: #fff;
+    letter-spacing: 10px;
+    text-transform: lowercase;
+
+}
+.sci i{
+    position: relative;
+    background-color: #fb5849;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 50%;
+    top:-54px;
+
+}
+
+
+section .sci i{
+    position: relative;
+    background-color: #fb5849;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 50%;
+    top:-54px;
+    transition: 0.5s;
+    transition-delay: calc(0.2s * var(--i));
+}
+section.active .sci i {
+    opacity: 0;
+    visibility: hidden;
+    
+    transform: translateY(100px);
+}
+
+
+
+
